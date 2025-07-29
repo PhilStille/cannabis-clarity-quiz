@@ -96,3 +96,26 @@ input[type="range"] {
   font-size: 0.9rem;
   color: #666;
 }
+
+/* Contact info (first name and email) layout */
+.contact-info {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  margin-bottom: 2rem;
+}
+
+.contact-info label {
+  flex: 1 1 200px;
+  font-weight: 500;
+}
+
+.contact-info input[type="text"],
+.contact-info input[type="email"] {
+  width: 100%;
+  padding: 0.5rem;
+  margin-top: 0.3rem;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 1rem;
+}
