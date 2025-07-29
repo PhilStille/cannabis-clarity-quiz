@@ -16,6 +16,15 @@ document.addEventListener('DOMContentLoaded', function () {
   form.addEventListener('submit', function (e) {
     e.preventDefault();
 
+    // Before processing any quiz logic, run built‑in browser validation
+    // on the form. If any required fields (e.g. first name or email) are
+    // missing or invalid, reportValidity() will display the appropriate
+    // feedback and return false. In that case we abort submission to
+    // prevent users from bypassing the contact information.
+    if (!form.reportValidity()) {
+      return;
+    }
+
     // Initialise score counters
     const scores = {
       coaster: 0,
