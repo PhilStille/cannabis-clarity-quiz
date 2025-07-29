@@ -11,7 +11,16 @@
   <div class="quiz-container">
     <h1>Are you ready to transform how cannabis affects your clarity and focus?</h1>
     <form id="quiz-form">
-      <!-- Question 1: Scale 1-10 -->
+            <!-- Contact information: require first name and email before starting -->
+      <div class="contact-info">
+        <label for="firstName">First Name
+          <input type="text" id="firstName" name="firstName" placeholder="Enter your first name" required>
+        </label>
+        <label for="email">Email
+          <input type="email" id="email" name="email" placeholder="Enter your email" required>
+        </label>
+      </div>
+<!-- Question 1: Scale 1-10 -->
       <div class="question">
         <label for="q1">1. On a scale of 1–10, how mentally clear do you typically feel during the day?
           <br><small>(1 = constant fog / 10 = consistently sharp and focused)</small></label>
