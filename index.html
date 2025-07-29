@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Are you ready to transform how cannabis affects your clarity and focus?</title>
+  <link rel="stylesheet" href="style.css">
+  <script defer src="script.js"></script>
+</head>
+<body>
+  <div class="quiz-container">
+    <h1>Are you ready to transform how cannabis affects your clarity and focus?</h1>
+    <form id="quiz-form">
+      <!-- Question 1: Scale 1-10 -->
+      <div class="question">
+        <label for="q1">1. On a scale of 1–10, how mentally clear do you typically feel during the day?
+          <br><small>(1 = constant fog / 10 = consistently sharp and focused)</small></label>
+        <input type="range" id="q1" name="q1" min="1" max="10" value="5" oninput="document.getElementById('q1val').textContent=this.value">
+        <span class="slider-value" id="q1val">5</span>
+      </div>
+
+      <!-- Question 2: Multiple choice A-D -->
+      <div class="question">
+        <label>2. How often do you use cannabis?</label>
+        <div class="options">
+          <label><input type="radio" name="q2" value="A" required> Daily or almost daily, often without thinking</label>
+          <label><input type="radio" name="q2" value="B"> I use regularly but think about cutting back sometimes</label>
+          <label><input type="radio" name="q2" value="C"> I use mindfully or during certain windows</label>
+          <label><input type="radio" name="q2" value="D"> I rarely use now or only in very intentional moments</label>
+        </div>
+      </div>
+
+      <!-- Question 3: Multiple choice A-D -->
+      <div class="question">
+        <label>3. What best describes how you feel after using cannabis lately?</label>
+        <div class="options">
+          <label><input type="radio" name="q3" value="A" required> Foggy, dull, or checked out</label>
+          <label><input type="radio" name="q3" value="B"> A mix—sometimes calm, other times regretful</label>
+          <label><input type="radio" name="q3" value="C"> Grounded or reflective, but I still question my patterns</label>
+          <label><input type="radio" name="q3" value="D"> Creative, connected, or centered</label>
+        </div>
+      </div>
+
+      <!-- Question 4: Multiple choice A-D -->
+      <div class="question">
+        <label>4. Which statement best matches your current cannabis habit?</label>
+        <div class="options">
+          <label><input type="radio" name="q4" value="A" required> It’s just a part of my routine—I don’t think about it much</label>
+          <label><input type="radio" name="q4" value="B"> I go back and forth between wanting to stop and falling back in</label>
+          <label><input type="radio" name="q4" value="C"> I’ve been shifting how I use it, but I haven’t fully stabilized</label>
+          <label><input type="radio" name="q4" value="D"> I’ve made peace with it—either through moderation or letting it go</label>
+        </div>
+      </div>
+
+      <!-- Question 5: Scale 1-10 -->
+      <div class="question">
+        <label for="q5">5. On a scale of 1–10, how aligned do you feel with your deeper values and goals?
+          <br><small>(1 = I feel disconnected / 10 = I live in alignment with them daily)</small></label>
+        <input type="range" id="q5" name="q5" min="1" max="10" value="5" oninput="document.getElementById('q5val').textContent=this.value">
+        <span class="slider-value" id="q5val">5</span>
+      </div>
+
+      <!-- Question 6: Multiple choice A-D -->
+      <div class="question">
+        <label>6. When you imagine your future, what feels most true right now?</label>
+        <div class="options">
+          <label><input type="radio" name="q6" value="A" required> I don’t really think much about the future</label>
+          <label><input type="radio" name="q6" value="B"> I want more clarity but don’t know how to get there</label>
+          <label><input type="radio" name="q6" value="C"> I’ve been setting intentions but sometimes lose momentum</label>
+          <label><input type="radio" name="q6" value="D"> I feel excited about what I’m building or becoming</label>
+        </div>
+      </div>
+
+      <!-- Question 7: Multiple choice A-D -->
+      <div class="question">
+        <label>7. How would you describe your current level of energy and drive?</label>
+        <div class="options">
+          <label><input type="radio" name="q7" value="A" required> Low energy, hard to get moving</label>
+          <label><input type="radio" name="q7" value="B"> Inconsistent—some days on, some days flat</label>
+          <label><input type="radio" name="q7" value="C"> Usually good, but I lose track of time or focus</label>
+          <label><input type="radio" name="q7" value="D"> Focused and intentional most of the time</label>
+        </div>
+      </div>
+
+      <!-- Question 8: Multiple choice A-D -->
+      <div class="question">
+        <label>8. Have you ever tried any form of personal development or self-growth practice (coaching, therapy, journaling, meditation, etc.)?</label>
+        <div class="options">
+          <label><input type="radio" name="q8" value="A" required> Not really</label>
+          <label><input type="radio" name="q8" value="B"> Yes, but I didn’t stick with it</label>
+          <label><input type="radio" name="q8" value="C"> Yes, and I still use some of those tools</label>
+          <label><input type="radio" name="q8" value="D"> Yes, it’s part of my lifestyle</label>
+        </div>
+      </div>
+
+      <!-- Question 9: Multiple choice A-D -->
+      <div class="question">
+        <label>9. What’s your relationship with fun or joy lately?</label>
+        <div class="options">
+          <label><input type="radio" name="q9" value="A" required> Mostly numb or checked out—I zone out to relax</label>
+          <label><input type="radio" name="q9" value="B"> I chase it, but it doesn’t feel fully satisfying</label>
+          <label><input type="radio" name="q9" value="C"> I find moments of fun but want more presence</label>
+          <label><input type="radio" name="q9" value="D"> I’m tapped into joy more often, even in small things</label>
+        </div>
+      </div>
+
+      <!-- Question 10: Multiple choice A-D -->
+      <div class="question">
+        <label>10. Why do you think you use cannabis most often?</label>
+        <div class="options">
+          <label><input type="radio" name="q10" value="A" required> To escape, kill time, or avoid hard feelings</label>
+          <label><input type="radio" name="q10" value="B"> To quiet my mind or reduce stress, but I’m conflicted</label>
+          <label><input type="radio" name="q10" value="C"> For insight or emotional processing, but it’s not perfect</label>
+          <label><input type="radio" name="q10" value="D"> To deepen focus, creativity, or calm—with clear intention</label>
+        </div>
+      </div>
+
+      <!-- Question 11: Scale 1-10 -->
+      <div class="question">
+        <label for="q11">11. How “in control” do you feel of your cannabis use right now?
+          <br><small>(1 = it controls me / 10 = I’m fully in choice with it)</small></label>
+        <input type="range" id="q11" name="q11" min="1" max="10" value="5" oninput="document.getElementById('q11val').textContent=this.value">
+        <span class="slider-value" id="q11val">5</span>
+      </div>
+
+      <!-- Question 12: Multiple choice A-D -->
+      <div class="question">
+        <label>12. What best describes your current daily rhythm?</label>
+        <div class="options">
+          <label><input type="radio" name="q12" value="A" required> Chaotic or on autopilot</label>
+          <label><input type="radio" name="q12" value="B"> Busy but draining—I want to slow down</label>
+          <label><input type="radio" name="q12" value="C"> I’m actively trying to create healthier patterns</label>
+          <label><input type="radio" name="q12" value="D"> I’ve built routines that support clarity and creativity</label>
+        </div>
+      </div>
+
+      <!-- Question 13: Multiple choice A-D -->
+      <div class="question">
+        <label>13. Which phrase feels most familiar to you?</label>
+        <div class="options">
+          <label><input type="radio" name="q13" value="A" required> “I’m just trying to get through the day”</label>
+          <label><input type="radio" name="q13" value="B"> “I want to change—I just need help sticking with it”</label>
+          <label><input type="radio" name="q13" value="C"> “I’m in the process of shifting things”</label>
+          <label><input type="radio" name="q13" value="D"> “I’ve found a groove that works for me”</label>
+        </div>
+      </div>
+
+      <!-- Question 14: Multiple choice A-D -->
+      <div class="question">
+        <label>14. How do you usually handle uncomfortable emotions or stress?</label>
+        <div class="options">
+          <label><input type="radio" name="q14" value="A" required> I avoid or numb out—intentionally or not</label>
+          <label><input type="radio" name="q14" value="B"> I notice them, but often fall into old habits</label>
+          <label><input type="radio" name="q14" value="C"> I try to meet them with curiosity and tools</label>
+          <label><input type="radio" name="q14" value="D"> I can sit with them and move through them with presence</label>
+        </div>
+      </div>
+
+      <!-- Question 15: Scale 1-10 -->
+      <div class="question">
+        <label for="q15">15. If you knew there was a way to feel lighter, clearer, and more aligned—without losing your edge—how ready would you be to explore it?
+          <br><small>(1 = Not ready at all / 10 = I’ve been waiting for this)</small></label>
+        <input type="range" id="q15" name="q15" min="1" max="10" value="5" oninput="document.getElementById('q15val').textContent=this.value">
+        <span class="slider-value" id="q15val">5</span>
+      </div>
+
+      <button type="submit" class="submit-btn">Get Your Result</button>
+    </form>
+  </div>
+</body>
+</html>
